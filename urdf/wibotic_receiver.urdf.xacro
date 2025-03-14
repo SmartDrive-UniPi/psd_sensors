@@ -39,7 +39,7 @@
       <visual>
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 ${pi/2.0}" />
         <geometry>
-          <mesh filename="package://ros_components_description/meshes/wibotic_receiver.stl" />
+          <mesh filename="package://psd_sensors/meshes/wibotic_receiver.stl" />
         </geometry>
         <material name="Grey">
           <color rgba="0.15 0.15 0.15 1.0" />
@@ -49,7 +49,7 @@
       <collision>
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 ${pi/2.0}" />
         <geometry>
-          <mesh filename="package://ros_components_description/meshes/wibotic_receiver.stl" />
+          <mesh filename="package://psd_sensors/meshes/wibotic_receiver.stl" />
         </geometry>
       </collision>
     </link>

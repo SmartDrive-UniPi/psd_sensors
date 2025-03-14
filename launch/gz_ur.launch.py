@@ -30,7 +30,7 @@ def generate_launch_description():
     robot_namespace = LaunchConfiguration("robot_namespace")
     device_namespace = LaunchConfiguration("device_namespace")
     initial_joint_controllers = PathJoinSubstitution(
-        [FindPackageShare("ros_components_description"), "config", "ur_controllers.yaml"]
+        [FindPackageShare("psd_sensors"), "config", "ur_controllers.yaml"]
     )
 
     # Using robot_namespace as prefix for controller name is caused by

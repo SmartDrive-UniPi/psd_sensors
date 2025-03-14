@@ -1,4 +1,4 @@
-# ros_components_description
+# psd_sensors
 
 URDF models of sensors and other components offered alongside with Husarion robots
 
@@ -39,10 +39,10 @@ URDF models of sensors and other components offered alongside with Husarion robo
 First build the package by running:
 
 ```bash
-# create workspace folder and clone ros_components_description
+# create workspace folder and clone psd_sensors
 mkdir -p ros2_ws/src
 cd ros2_ws
-git clone https://github.com/husarion/ros_components_description.git src/ros_components_description
+git clone https://github.com/husarion/psd_sensors.git src/psd_sensors
 
 # in case the package will be used within simulation
 export HUSARION_ROS_BUILD_TYPE=simulation
@@ -56,7 +56,7 @@ To include the sensor, use the following code:
 
 ```xml
 <!-- include file with definition of xacro macro of sensor -->
-<xacro:include filename="$(find ros_components_description)/urdf/slamtec_rplidar.urdf.xacro" ns="lidar" />
+<xacro:include filename="$(find psd_sensors)/urdf/slamtec_rplidar.urdf.xacro" ns="lidar" />
 
 <!-- evaluate the macro and place the sensor on robot -->
 <xacro:lidar.slamtec_rplidar

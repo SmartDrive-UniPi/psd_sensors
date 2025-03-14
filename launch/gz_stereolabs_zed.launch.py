@@ -53,9 +53,9 @@ def fix_depth_image_tf(context, *args, **kwargs):
 
 
 def generate_launch_description():
-    ros_components_description = get_package_share_directory("ros_components_description")
+    psd_sensors = get_package_share_directory("psd_sensors")
     gz_bridge_config_path = os.path.join(
-        ros_components_description, "config", "gz_stereolabs_zed_remappings.yaml"
+        psd_sensors, "config", "gz_stereolabs_zed_remappings.yaml"
     )
 
     robot_namespace = LaunchConfiguration("robot_namespace")

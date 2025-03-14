@@ -18,7 +18,7 @@
 		cam_roll="${rpy.split()[0]}" cam_pitch="${rpy.split()[1]}" cam_yaw="${rpy.split()[2]}" 
     simulation="${use_sim}" />
 
-  <xacro:include filename="$(find ros_components_description)/urdf/gz_sensor.urdf.xacro" ns="gz_sensor" />
+  <xacro:include filename="$(find psd_sensors)/urdf/gz_sensor.urdf.xacro" ns="gz_sensor" />
 
   <xacro:gz_sensor.camera
     reference="${ns}${device_namespace}"

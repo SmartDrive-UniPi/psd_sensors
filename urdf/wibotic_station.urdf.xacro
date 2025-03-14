@@ -39,7 +39,7 @@
       <visual>
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 ${pi/2.0}" />
         <geometry>
-          <mesh filename="package://ros_components_description/meshes/wibotic_station.stl" />
+          <mesh filename="package://psd_sensors/meshes/wibotic_station.stl" />
         </geometry>
         <material name="LightGrey">
           <color rgba="0.6 0.6 0.6 1.0" />

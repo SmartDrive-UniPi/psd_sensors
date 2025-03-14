@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.11)
-project(ros_components_description)
+project(psd_sensors)
 
 find_package(ament_cmake REQUIRED)
 

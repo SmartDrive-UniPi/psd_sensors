@@ -92,7 +92,7 @@
       <visual>
         <origin xyz="${screw_offset_x} 0 ${screw_offset_z}" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://ros_components_description/meshes/${model}.stl" />
+          <mesh filename="package://psd_sensors/meshes/${model}.stl" />
         </geometry>
         <material name="mat">
           <color rgba="0.25 0.25 0.25 0.99" />
@@ -100,7 +100,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://ros_components_description/meshes/${model}.stl" />
+          <mesh filename="package://psd_sensors/meshes/${model}.stl" />
         </geometry>
       </collision>
     </link>

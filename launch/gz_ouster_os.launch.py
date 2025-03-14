@@ -24,9 +24,9 @@ from launch.substitutions import EnvironmentVariable, LaunchConfiguration
 
 
 def generate_launch_description():
-    ros_components_description = get_package_share_directory("ros_components_description")
+    psd_sensors = get_package_share_directory("psd_sensors")
     gz_bridge_config_path = os.path.join(
-        ros_components_description, "config", "gz_ouster_os_remappings.yaml"
+        psd_sensors, "config", "gz_ouster_os_remappings.yaml"
     )
 
     robot_namespace = LaunchConfiguration("robot_namespace")

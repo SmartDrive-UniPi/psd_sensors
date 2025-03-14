@@ -22,8 +22,8 @@ import xacro
 import yaml
 from ament_index_python.packages import get_package_share_directory
 
-ros_components_description = get_package_share_directory("ros_components_description")
-xacro_path = os.path.join(ros_components_description, "test/component.urdf.xacro")
+psd_sensors = get_package_share_directory("psd_sensors")
+xacro_path = os.path.join(psd_sensors, "test/component.urdf.xacro")
 
 # Type: [device_namespace, link_name, sensor_link_name, sensor_name, default_device_namespace]
 components_types_with_names = {

@@ -27,7 +27,7 @@
       <visual>
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
         <geometry>
-          <mesh filename="package://ros_components_description/meshes/orbbec_astra.dae" />
+          <mesh filename="package://psd_sensors/meshes/orbbec_astra.dae" />
         </geometry>
       </visual>
 
@@ -90,7 +90,7 @@
 
     <!-- GAZEBO -->
     <!-- https://github.com/orbbec/OrbbecSDK_ROS2#all-available-topics -->
-    <xacro:include filename="$(find ros_components_description)/urdf/gz_sensor.urdf.xacro" ns="gz_sensor" />
+    <xacro:include filename="$(find psd_sensors)/urdf/gz_sensor.urdf.xacro" ns="gz_sensor" />
 
     <xacro:gz_sensor.camera
       reference="${device_namespace}_link"

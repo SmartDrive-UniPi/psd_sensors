@@ -66,12 +66,12 @@ def generate_launch_description():
     device_namespace = LaunchConfiguration("device_namespace")
 
     initial_joint_controllers = PathJoinSubstitution(
-        [FindPackageShare("ros_components_description"), "config", "kinova_6dof_controllers.yaml"]
+        [FindPackageShare("psd_sensors"), "config", "kinova_6dof_controllers.yaml"]
     )
 
     gz_bridge_name = LaunchConfiguration("gz_bridge_name")
     gz_bridge_config_path = PathJoinSubstitution(
-        [FindPackageShare("ros_components_description"), "config", "gz_kinova_remappings.yaml"]
+        [FindPackageShare("psd_sensors"), "config", "gz_kinova_remappings.yaml"]
     )
 
     namespaced_gz_bridge_config_path = ReplaceString(

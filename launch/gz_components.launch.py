@@ -108,7 +108,7 @@ def get_launch_descriptions_from_yaml_node(
 
 
 def launch_setup(context, *args, **kwargs):
-    ros_components_description = get_package_share_directory("ros_components_description")
+    psd_sensors = get_package_share_directory("psd_sensors")
 
     components_config_path = LaunchConfiguration("components_config_path").perform(context)
     namespace = LaunchConfiguration("namespace").perform(context)
@@ -123,7 +123,7 @@ def launch_setup(context, *args, **kwargs):
     actions = []
     if components_config is not None:
         actions += get_launch_descriptions_from_yaml_node(
-            components_config, ros_components_description, namespace
+            components_config, psd_sensors, namespace
         )
 
     return actions

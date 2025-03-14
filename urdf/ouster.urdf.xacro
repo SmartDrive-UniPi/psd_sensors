@@ -63,7 +63,7 @@
       <visual>
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
         <geometry>
-          <mesh filename="package://ros_components_description/meshes/${mesh}.dae" />
+          <mesh filename="package://psd_sensors/meshes/${mesh}.dae" />
         </geometry>
       </visual>
 

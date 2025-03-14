@@ -20,7 +20,7 @@
       <visual>
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
         <geometry>
-          <mesh filename="package://ros_components_description/meshes/teltonika_003R-00253.dae" />
+          <mesh filename="package://psd_sensors/meshes/teltonika_003R-00253.dae" />
         </geometry>
       </visual>
 
@@ -28,7 +28,7 @@
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
         <geometry>
           <mesh
-            filename="package://ros_components_description/meshes/teltonika_003R-00253_collision.stl" />
+            filename="package://psd_sensors/meshes/teltonika_003R-00253_collision.stl" />
         </geometry>
       </collision>
 
